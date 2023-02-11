@@ -18,7 +18,7 @@ const UserBlog = () => {
          <div>
             <p>아이디{id}</p>
             {arr.map(v => (
-               <Link href={`/blog/${id}/${v}`}>
+               <Link href={`/blog/${id}/${v}`} key={v}>
                   <div>{v}</div>
                </Link>
             ))}
